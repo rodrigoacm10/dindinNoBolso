@@ -1,0 +1,331 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"); */
+
+/*  */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* transition: 0.5s; */
+}
+
+html,
+body,
+#root,
+.app,
+.content {
+  height: 100%;
+  width: 100%;
+  /* font-family: "Source Sans 3", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  background-color: #e3e3e3;
+  /* background-color: #f7f7f7; */
+}
+
+.canceled-row {
+  background-color: #e6e6e6; /* cor de fundo vermelho claro */
+  /* color: #721c24; cor do texto vermelho escuro */
+}
+
+.grid-especial {
+  grid-template-columns: 1.25fr 0.75fr;
+}
+
+.half-div {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.elipse-gradient {
+  width: 300px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.elipse-gradient-small {
+  width: 200px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+.margin-content {
+  /* margin-left: 400px; */
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  /* background-color: blue; */
+  /* width: 400px; */
+  padding: 5px 20px 20px 20px;
+  height: 100vh;
+  transition: 0.2s;
+}
+
+.top-bar {
+  padding: 5px;
+  /* background-color: brown; */
+  /* background-color: #f3e2e0; */
+  background-color: #ffffff;
+  /* background-color: #7a7a7a; */
+}
+
+/* .hoverBtnMoreOrLess:hover {
+  /* color: #8b3226; */
+/* color: "blue !important"; */
+/* } */
+
+.test {
+  height: 110vh;
+}
+
+.centralized {
+  position: fixed;
+  top: 50%;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* setas carousel */
+.slick-prev:before,
+.slick-next:before {
+  color: #b23f30 !important;
+  /* font-size: 3.5rem !important; */
+}
+
+/* form container scrollbar */
+
+.scroll-classes::-webkit-scrollbar {
+  width: 2px;
+}
+
+.scroll-classes {
+  overflow-x: hidden;
+}
+
+.scroll-classes::-webkit-scrollbar-track {
+  /* width: 10px; */
+  background-color: red;
+  @apply bg-slate-400;
+}
+
+.scroll-classes::-webkit-scrollbar-thumb {
+  background-color: blue;
+  @apply bg-white;
+
+  /* border-radius: 100px; */
+}
+
+.scale-class:hover {
+  transform: scale(1.01);
+}
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: #555;
+} */
+
+#reader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  border-radius: 20px !important;
+  border: 10px solid #b23f30 !important;
+  background-color: #f3e2e0;
+}
+
+.serviceAndTerms:link,
+.serviceAndTerms:visited {
+  color: #b23f30;
+}
+
+.serviceAndTerms:hover,
+.serviceAndTerms:active {
+  color: #8b3226;
+}
+
+/* .absolute-perfil {
+  position: relative !important;
+  /* color: red !important; 
+} */
+/* Ajeitar aquele botão */
+.relative-perfil {
+  /* position: absolute !important; */
+  /* color: red !important; */
+  bottom: 25px;
+  left: 60px; 
+  /* right: 0%; */
+  transform: (-50%, -50%);
+}
+
+.animationStartRight {
+  animation-name: moveInRight;
+  animation-duration: 1s;
+}
+
+.animationStartLeft {
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+}
+
+.animationStartTop {
+  animation-name: moveInTop;
+  animation-duration: 1s;
+}
+
+.animationStartBottom {
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+}
+
+.animationOpacity {
+  animation-name: opacityAnimation;
+  animation-duration: 0.5s;
+}
+
+.animationOpacityOut {
+  animation-name: opacityAnimationOut;
+  animation-duration: 0.5s;
+}
+
+.btnView {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btnView:link,
+.btnView:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btnView:hover,
+.btnView:active {
+  color: "gray";
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  80% {
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  80% {
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  80% {
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  80% {
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes opacityAnimation {
+  0% {
+    transform: translate(-100%);
+
+    opacity: 0;
+  }
+
+  80% {
+  }
+
+  100% {
+    transform: translate(0);
+
+    opacity: 1;
+  }
+}
+
+@keyframes opacityAnimationOut {
+  0% {
+    transform: translate(0);
+    opacity: 1;
+  }
+
+  80% {
+  }
+
+  100% {
+    transform: translate(-100%);
+    opacity: 0;
+  }
+}
