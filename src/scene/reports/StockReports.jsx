@@ -15,7 +15,7 @@ import { SidebarContext } from "../../context/sidebarContext";
 import SmallReportGrid from "../../components/reports/SmallReportGrid";
 import { suppliersBuysCol } from "../../utils/columnsForGrid.jsx";
 import BuysGrid from "../../components/BuysGrid.jsx";
-import ClientInfoReport from "../../components/reports/clientInfoReport.jsx";
+import ClientInfoReport from "../../components/reports/ClientInfoReport.jsx";
 import SupplierReportGrid from "../../components/reports/SupplierReportsGrid.jsx";
 import ProdEntryReportGrid from "../../components/reports/ProdEntryReportGrid.jsx";
 import BrandReportGrid from "../../components/reports/BrandReportGrid.jsx";

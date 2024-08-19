@@ -12,7 +12,7 @@ import * as XLSX from "xlsx";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useContext, useEffect, useState } from "react";
 import { SidebarContext } from "../../context/sidebarContext";
-import ClientInfoReport from "../../components/reports/clientInfoReport";
+import ClientInfoReport from "../../components/reports/ClientInfoReport";
 import {
   buysClients,
   clientByOneProduct,

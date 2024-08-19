@@ -12,7 +12,7 @@ import * as XLSX from "xlsx";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useContext, useEffect, useState } from "react";
 import { SidebarContext } from "../../context/sidebarContext";
-import ClientInfoReport from "../../components/reports/clientInfoReport";
+import ClientInfoReport from "../../components/reports/ClientInfoReport";
 
 import SmallReportGrid from "../../components/reports/SmallReportGrid";
 import { financeEntry } from "../../utils/columnsForGrid.jsx";
@@ -32,7 +32,7 @@ import {
   liquidRecipe,
   totalRecipe,
 } from "../../services/APIService.js";
-import MiniMovimentsGrid from "../../components/reports/miniMovimentsGrid.jsx";
+import MiniMovimentsGrid from "../../components/reports/MiniMovimentsGrid.jsx";
 import CategorysReportGrid from "../../components/reports/CategorysReportGrid.jsx";
 import { exportMovs } from "../../utils/toExportData.js";
 
