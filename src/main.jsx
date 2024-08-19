@@ -22,7 +22,7 @@ import Home from "./scene/home/index.jsx";
 import Initial from "./scene/initial/index.jsx";
 import Sales from "./scene/sales/index.jsx";
 import Buys from "./scene/buys/index.jsx";
-import SalesReports from "./scene/reports/salesReports.jsx";
+import SalesReports from "./scene/reports/SalesReports.jsx";
 import StocksReports from "./scene/reports/StockReports.jsx";
 import FinancesReports from "./scene/reports/FinancesReport.jsx";
 
